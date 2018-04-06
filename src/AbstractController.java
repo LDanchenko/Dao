@@ -50,8 +50,7 @@ public abstract class AbstractController<E, K> {
     //    connection = returnConnection(connection);
     //}
 
-    public abstract ResultSet getAll();
-    public abstract E update(E entity);
+    public abstract ResultSet getData(String query);
     public abstract E getEntityById(K id);
     public abstract boolean delete(K id);
     public abstract boolean create(E entity);
